@@ -6,6 +6,7 @@ body {
 
 .card-theme {
     margin-top: 100px;
+    width: 100%;
     color: red;
     background: #fff;
     height: 500px;

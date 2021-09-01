@@ -13,7 +13,8 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
+    this.animateToggleNavbar();
+    this.toggleDropdown();
   }
 
   animateToggleSidebar():void {
@@ -24,6 +25,24 @@ export class NavbarComponent implements OnInit {
     else {
       this.setSidebarState = true;
       this.output_setSidebarState.emit(true);
+    }
+  }
+
+  animateToggleNavbar():void {
+    const navbarNavigationSmall = document.querySelector('.navbar-navigation-small');
+    const toggleSidebar = document.querySelector('.toggle-sidebar-small');
+    toggleSidebar?.addEventListener('click', () => {
+      navbarNavigationSmall?.classList.toggle('active');
+    });
+  }
+
+  toggleDropdown():void {
+    const menuItemDropdowns = document.querySelectorAll('.navbar-menu-item.dropdown');
+    const menuItemArrow = document.querySelectorAll('.navbar-menu-item-arrow');
+    for (let i = 0; i < menuItemDropdowns.length; i++) {
+      menuItemDropdowns[i].addEventListener('click', () => {
+        menuItemArrow[i].classList.toggle('active');  
+      });
     }
   }
 

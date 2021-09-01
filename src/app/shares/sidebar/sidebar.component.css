@@ -96,3 +96,8 @@
 }
 /* <=== end sidebar menu item dropdown ===> */
 
+@media screen and (max-width:778px) {
+    .sidebar-navigation {
+        width: 0;
+    }
+}
