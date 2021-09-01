@@ -1,0 +1,43 @@
+.navbar-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    max-height: 60px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* <=== navbar logo ===> */
+.navbar-navigation .navbar-logo-container {
+    position: relative;
+    float: left;
+    line-height: 60px;
+    width: 250px;
+    text-align: center;
+}
+.navbar-navigation .navbar-logo-container .navbar-logo {
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar-navigation .navbar-logo-container .navbar-logo span {
+    color: #3498DB;
+}
+/* <=== end navbar logo ===> */
+
+/* <=== toggle sidebar ===> */
+.navbar-navigation .navbar-toggle-sidebar {
+    position:relative;
+    float: left;
+}
+.navbar-navigation  .navbar-toggle-sidebar .toggle-sidebar {
+    color: #3498DB;
+    width: 50px;
+    line-height: 62px;
+}
+/* <=== end toggle sidebar ===> */
