@@ -2,13 +2,14 @@
     position: relative;
     top: 60px;
     display: flex;
+ 
 }
 
 .app-main-right {
     width: 100%;
     position: relative;
     margin-left: 250px;
-    z-index: 1;
+
     transition: .3s;
     overflow: hidden;
 }

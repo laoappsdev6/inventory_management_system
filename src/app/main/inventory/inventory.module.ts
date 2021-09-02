@@ -5,7 +5,9 @@ import { InventoryRoutingModule } from './inventory-routing.module';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+
+  ],
   imports: [
     CommonModule,
     InventoryRoutingModule

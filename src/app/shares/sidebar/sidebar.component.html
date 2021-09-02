@@ -90,10 +90,21 @@
 
 
 
-    <!-- branch -->
-    <a routerLink="branch" class="sidebar-menu-item">
+
+    <!-- supplier -->
+    <a routerLink="supplier" class="sidebar-menu-item">
         <span class="sidebar-menu-item-icon"><i class="fas fa-truck"></i></span>
         <span class="sidebar-menu-item-text">ຂໍ້ມູນຜູ້ສະໜອງ</span>
+    </a>
+    <!-- end of supplier -->
+
+
+
+
+    <!-- branch -->
+    <a routerLink="branch" class="sidebar-menu-item">
+        <span class="sidebar-menu-item-icon"><i class="fas fa-list-ul"></i></span>
+        <span class="sidebar-menu-item-text">ຂໍ້ມູນສາຂາ</span>
     </a>
     <!-- end of branch -->
 
@@ -101,23 +112,23 @@
 
 
 
-        <!-- inventory information  -->
-        <a href="javascript:void(0)" class="sidebar-menu-item dropdown" data-toggle="collapse" data-target="#dropdown-inventory-information">
-            <div class="left">
-                <span class="sidebar-menu-item-icon"><i class="fas fa-truck-loading"></i></span>
-            <span class="sidebar-menu-item-text">ຄັງສິນຄ້າ</span>
-            </div>
-            <div class="right">
-                <span class="sidebar-menu-item-arrow"><i class="fas fa-angle-left"></i></span>
-            </div>
-        </a>
-        <div class="collapse" id="dropdown-inventory-information">
-            <a routerLink="inventory" class="sidebar-menu-item-dropdown">
-                <span class="sidebar-menu-item-icon"><i class="fas fa-angle-right"></i></span>
-                <span class="sidebar-menu-item-text">ຂໍ້ມູນຄັງສິນຄ້າ</span>
-            </a>
+    <!-- inventory information  -->
+    <a href="javascript:void(0)" class="sidebar-menu-item dropdown" data-toggle="collapse" data-target="#dropdown-inventory-information">
+        <div class="left">
+            <span class="sidebar-menu-item-icon"><i class="fas fa-truck-loading"></i></span>
+        <span class="sidebar-menu-item-text">ຄັງສິນຄ້າ</span>
         </div>
-        <!-- end of inventory information -->
+        <div class="right">
+            <span class="sidebar-menu-item-arrow"><i class="fas fa-angle-left"></i></span>
+        </div>
+    </a>
+    <div class="collapse" id="dropdown-inventory-information">
+        <a routerLink="inventory" class="sidebar-menu-item-dropdown">
+            <span class="sidebar-menu-item-icon"><i class="fas fa-angle-right"></i></span>
+            <span class="sidebar-menu-item-text">ຂໍ້ມູນຄັງສິນຄ້າ</span>
+        </a>
+    </div>
+    <!-- end of inventory information -->
 
 
 </aside>
